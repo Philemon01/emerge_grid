@@ -1,22 +1,30 @@
+import SectionHeader from "./section-header";
+
 export default function HowSection() {
   return (
-    <section id="how" className="py-16 px-6 lg:px-24 bg-gradient-to-b from-transparent to-black/10">
+    <section id="how" className="py-20 px-6 lg:px-24">
       <div className="max-w-6xl mx-auto">
-        <h3 className="text-sm text-brand-primary font-semibold">How it works</h3>
-        <p className="mt-2 text-zinc-300">Three ways to get help — built for everyone.</p>
+        <SectionHeader 
+          title="How it works" 
+          subtitle="Three ways to get help"
+          description="Built for everyone — from feature phones to state-of-the-art command centers."
+        />
 
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="card-bg p-6 rounded">
-            <div className="text-xl font-semibold">📞 Call the GRID Hotline</div>
-            <div className="mt-2 text-zinc-400">Speak naturally, get a hospital in &lt;4s. Works on feature phones.</div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="group p-8 border border-zinc-100 rounded-3xl bg-zinc-50/50 hover:bg-zinc-50 transition-colors">
+            <div className="text-4xl mb-6">📞</div>
+            <h4 className="text-xl font-bold text-zinc-900 mb-3">Call the GRID Hotline</h4>
+            <p className="text-zinc-600 text-sm leading-relaxed">Speak naturally, get hospital availability in &lt;4s. Works on all feature phones.</p>
           </div>
-          <div className="card-bg p-6 rounded">
-            <div className="text-xl font-semibold">💬 WhatsApp GRID</div>
-            <div className="mt-2 text-zinc-400">Report incidents, receive first-aid guidance, and notify hospitals.</div>
+          <div className="group p-8 border border-zinc-100 rounded-3xl bg-zinc-50/50 hover:bg-zinc-50 transition-colors">
+            <div className="text-4xl mb-6">💬</div>
+            <h4 className="text-xl font-bold text-zinc-900 mb-3">WhatsApp GRID</h4>
+            <p className="text-zinc-600 text-sm leading-relaxed">Report incidents, receive first-aid guidance, and notify hospitals instantly.</p>
           </div>
-          <div className="card-bg p-6 rounded">
-            <div className="text-xl font-semibold">🗺 Live Dashboard</div>
-            <div className="mt-2 text-zinc-400">City map with real-time hospital status. Public, no login required.</div>
+          <div className="group p-8 border border-zinc-100 rounded-3xl bg-zinc-50/50 hover:bg-zinc-50 transition-colors">
+            <div className="text-4xl mb-6">🗺</div>
+            <h4 className="text-xl font-bold text-zinc-900 mb-3">Live Dashboard</h4>
+            <p className="text-zinc-600 text-sm leading-relaxed">City map with real-time hospital status. Open to the public, no login required.</p>
           </div>
         </div>
       </div>

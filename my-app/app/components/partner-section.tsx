@@ -1,24 +1,30 @@
+import SectionHeader from "./section-header";
+
 export default function PartnerSection() {
   return (
-    <section id="partner" className="py-16 px-6 lg:px-24">
-      <div className="max-w-6xl mx-auto text-center">
-        <h3 className="text-2xl font-bold">Partner with GRID</h3>
-        <p className="mt-2 text-zinc-300">Help us give every responder a full picture.</p>
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-6 card-bg rounded">
-            <div className="font-semibold">Hospitals</div>
-            <div className="text-zinc-400">See what the public reads about your hospital — and correct it</div>
-            <a className="mt-4 inline-block text-sm text-[#00B4A0]" href="#">Partner</a>
+    <section id="partner" className="py-24 px-6 lg:px-24 bg-zinc-50 border-t border-zinc-100">
+      <div className="max-w-6xl mx-auto">
+        <SectionHeader 
+          title="Get Involved" 
+          subtitle="Partner with GRID"
+          description="Help us give every responder a full picture and save lives through better coordination."
+          centered
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+          <div className="p-8 bg-white border border-zinc-200 rounded-2xl flex flex-col items-start shadow-sm">
+            <div className="font-bold text-zinc-900 text-xl mb-3">Hospitals</div>
+            <p className="text-zinc-500 text-sm mb-6 flex-1 leading-relaxed">See what the public reads about your hospital — and ensure data accuracy in real-time.</p>
+            <a className="font-bold text-sm text-[#3b24c9] hover:underline" href="#">Become a Partner &rarr;</a>
           </div>
-          <div className="p-6 card-bg rounded">
-            <div className="font-semibold">Government</div>
-            <div className="text-zinc-400">Give every emergency responder in Port Harcourt a full picture</div>
-            <a className="mt-4 inline-block text-sm text-[#00B4A0]" href="#">Engage</a>
+          <div className="p-8 bg-white border border-zinc-200 rounded-2xl flex flex-col items-start shadow-sm">
+            <div className="font-bold text-zinc-900 text-xl mb-3">Government</div>
+            <p className="text-zinc-500 text-sm mb-6 flex-1 leading-relaxed">Give every emergency responder in your jurisdiction a clear, unified view of the healthcare sector.</p>
+            <a className="font-bold text-sm text-[#3b24c9] hover:underline" href="#">Engage with us &rarr;</a>
           </div>
-          <div className="p-6 card-bg rounded">
-            <div className="font-semibold">Developers</div>
-            <div className="text-zinc-400">Built on open standards. Join the build.</div>
-            <a className="mt-4 inline-block text-sm text-[#00B4A0]" href="#">Contribute</a>
+          <div className="p-8 bg-white border border-zinc-200 rounded-2xl flex flex-col items-start shadow-sm">
+            <div className="font-bold text-zinc-900 text-xl mb-3">Developers</div>
+            <p className="text-zinc-500 text-sm mb-6 flex-1 leading-relaxed">Built on open standards like HL7 FHIR. Join the build and contribute to the mission.</p>
+            <a className="font-bold text-sm text-[#3b24c9] hover:underline" href="#">Contribute on GitHub &rarr;</a>
           </div>
         </div>
       </div>
