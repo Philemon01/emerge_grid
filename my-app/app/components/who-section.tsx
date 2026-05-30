@@ -9,7 +9,7 @@ export default function WhoSection() {
 
   return (
     <section id="who" className="py-24 px-6 lg:px-24 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+
       <div className="max-w-5xl mx-auto">
         <SectionHeader 
           title="Who it's for" 
@@ -20,12 +20,9 @@ export default function WhoSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-6 mb-20">
           {/* Citizen Card - Large Feature */}
-          <div className="md:col-span-8 group p-8 sm:p-12 border border-zinc-200 rounded-[2.5rem] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
           <div className="md:col-span-8 group p-8 sm:p-10 border border-zinc-200 rounded-[2rem] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
             <div>
               <div className="inline-flex px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold uppercase tracking-widest mb-6">Family & Public</div>
-              <h4 className="text-3xl font-bold text-zinc-900 mb-4">{users[0].name}</h4>
-              <p className="text-zinc-600 text-lg leading-relaxed max-w-lg">{users[0].desc}</p>
               <h4 className="text-2xl font-bold text-zinc-900 mb-4">{users[0].name}</h4>
               <p className="text-zinc-600 text-base leading-relaxed max-w-lg">{users[0].desc}</p>
             </div>
@@ -35,7 +32,6 @@ export default function WhoSection() {
           </div>
 
           {/* First Responder - Tall Card */}
-          <div className="md:col-span-4 md:row-span-2 group p-8 sm:p-10 border border-zinc-200 rounded-[2.5rem] bg-zinc-900 text-white hover:shadow-2xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden">
           <div className="md:col-span-4 md:row-span-2 group p-6 sm:p-8 border border-zinc-200 rounded-[2rem] bg-zinc-900 text-white hover:shadow-2xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden">
             <div className="relative z-10">
               <div className="inline-flex px-3 py-1 rounded-full bg-white/10 text-white/80 text-[10px] font-bold uppercase tracking-widest mb-6">Field Operations</div>
@@ -52,7 +48,6 @@ export default function WhoSection() {
           </div>
 
           {/* Clinical Director - Wide Card */}
-          <div className="md:col-span-8 group p-8 sm:p-10 border border-zinc-200 rounded-[2.5rem] bg-white hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div className="md:col-span-8 group p-6 sm:p-8 border border-zinc-200 rounded-[2rem] bg-white hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div className="max-w-md">
               <div className="inline-flex px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-[10px] font-bold uppercase tracking-widest mb-6">Hospital Leadership</div>
