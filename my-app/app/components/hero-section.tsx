@@ -16,7 +16,7 @@ export default function HeroSection() {
           />
           <div className="absolute inset-0 bg-black/40" />
           <div className="absolute inset-0 flex flex-col justify-center p-6 sm:p-12 lg:p-20">
-            <div className="mb-8 text-sm font-semibold uppercase tracking-[0.3em] text-white/90">EMERGE_GRID</div>
+            {/* <div className="mb-8 text-sm font-semibold uppercase tracking-[0.3em] text-white/90">EMERGE_GRID</div> */}
 
             <div className="max-w-2xl">
               <p className="text-sm tracking-[0.24em] uppercase text-white/75 mb-4">Realtime Hospital</p>
