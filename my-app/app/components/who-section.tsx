@@ -6,6 +6,7 @@ export default function WhoSection() {
     { name: "Officer Chidi", role: "Traffic Officer", desc: "At an accident scene needing to coordinate routing for multiple casualties simultaneously." },
     { name: "Dr. Ngozi", role: "ED Director", desc: "Correcting public-facing hospital data to manage incoming patient flow effectively." }
   ];
+  const marqueeRoles = ["Ambulance Drivers", "Paramedics", "Triage Nurses", "911 Dispatchers", "Civil Defense", "Volunteer Medics", "Red Cross", "Ministry of Health"];
 
   return (
     <section id="who" className="px-6 py-12 lg:px-24 bg-white overflow-hidden">
@@ -18,27 +19,27 @@ export default function WhoSection() {
           centered
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-5 mb-12">
           {/* Citizen Card - Large Feature */}
-          <div className="md:col-span-8 group p-8 sm:p-10 border border-zinc-200 rounded-[2rem] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
+          <div className="md:col-span-8 group p-6 sm:p-7 border border-zinc-200 rounded-[2rem] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
             <div>
-              <div className="inline-flex px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold uppercase tracking-widest mb-6">Family & Public</div>
-              <h4 className="text-2xl font-bold text-zinc-900 mb-4">{users[0].name}</h4>
+              <div className="inline-flex px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold uppercase tracking-widest mb-4">Family & Public</div>
+              <h4 className="text-2xl font-bold text-zinc-900 mb-3">{users[0].name}</h4>
               <p className="text-zinc-600 text-base leading-relaxed max-w-lg">{users[0].desc}</p>
             </div>
-            <div className="mt-8 flex items-center gap-4 text-zinc-400">
+            <div className="mt-5 flex items-center gap-4 text-zinc-400">
               <span className="text-sm font-medium italic">"I need to know which hospital has space before I drive."</span>
             </div>
           </div>
 
           {/* First Responder - Tall Card */}
-          <div className="md:col-span-4 md:row-span-2 group p-6 sm:p-8 border border-zinc-200 rounded-[2rem] bg-zinc-900 text-white hover:shadow-2xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden">
+          <div className="md:col-span-4 md:row-span-2 group p-5 sm:p-6 border border-zinc-200 rounded-[2rem] bg-zinc-900 text-white hover:shadow-2xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden">
             <div className="relative z-10">
-              <div className="inline-flex px-3 py-1 rounded-full bg-white/10 text-white/80 text-[10px] font-bold uppercase tracking-widest mb-6">Field Operations</div>
-              <h4 className="text-2xl font-bold mb-4">{users[1].name}</h4>
+              <div className="inline-flex px-3 py-1 rounded-full bg-white/10 text-white/80 text-[10px] font-bold uppercase tracking-widest mb-4">Field Operations</div>
+              <h4 className="text-2xl font-bold mb-3">{users[1].name}</h4>
               <p className="text-zinc-400 text-sm leading-relaxed">{users[1].desc}</p>
             </div>
-            <div className="relative z-10 mt-8 bg-white/5 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
+            <div className="relative z-10 mt-5 bg-white/5 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
               <div className="text-xs text-white/40 mb-2">Protocol Active</div>
               <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
                 <div className="h-full bg-[#3b24c9] w-2/3" />
@@ -48,9 +49,9 @@ export default function WhoSection() {
           </div>
 
           {/* Clinical Director - Wide Card */}
-          <div className="md:col-span-8 group p-6 sm:p-8 border border-zinc-200 rounded-[2rem] bg-white hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+          <div className="md:col-span-8 group p-5 sm:p-6 border border-zinc-200 rounded-[2rem] bg-white hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="max-w-md">
-              <div className="inline-flex px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-[10px] font-bold uppercase tracking-widest mb-6">Hospital Leadership</div>
+              <div className="inline-flex px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-[10px] font-bold uppercase tracking-widest mb-4">Hospital Leadership</div>
               <h4 className="text-2xl font-bold text-zinc-900 mb-2">{users[2].name}</h4>
               <p className="text-zinc-600 text-sm leading-relaxed">{users[2].desc}</p>
             </div>
@@ -67,16 +68,14 @@ export default function WhoSection() {
 
       {/* Repetitive Slider (Marquee Effect) */}
       <div className="mt-8 border-y border-zinc-100 bg-zinc-50/50 py-8 relative">
-        <div className="flex gap-12 whitespace-nowrap overflow-hidden">
-          <div className="flex gap-12 items-center animate-marquee shrink-0">
-            {["Ambulance Drivers", "Paramedics", "Triage Nurses", "911 Dispatchers", "Civil Defense", "Volunteer Medics", "Red Cross", "Ministry of Health"].map((role, idx) => (
+        <div className="overflow-hidden whitespace-nowrap">
+          <div className="flex w-max items-center gap-12 animate-marquee">
+            {marqueeRoles.map((role, idx) => (
               <span key={idx} className="text-4xl sm:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#3b24c9]/10 transition-colors">
                 {role}
               </span>
             ))}
-          </div>
-          <div className="flex gap-12 items-center animate-marquee shrink-0" aria-hidden="true">
-            {["Ambulance Drivers", "Paramedics", "Triage Nurses", "911 Dispatchers", "Civil Defense", "Volunteer Medics", "Red Cross", "Ministry of Health"].map((role, idx) => (
+            {marqueeRoles.map((role, idx) => (
               <span key={idx} className="text-4xl sm:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#3b24c9]/10 transition-colors">
                 {role}
               </span>

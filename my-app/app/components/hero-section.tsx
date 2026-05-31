@@ -27,9 +27,12 @@ export default function HeroSection() {
                 High-yield operational dashboard tracking triage latency, critical trauma levels, and bed availabilities across Port Harcourt's healthcare network.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a className="btn-outline text-white border-white/70 hover:border-white" href="#">Call - 0800 EMERGE</a>
-                <a className="btn-primary bg-[#3b24c9] text-white hover:bg-[#2f1aa7]" href="#">Message via WhatsApp</a>
+              <div className="hidden md:flex mt-5 items-center gap-3">
+                {/* Secondary CTA */}
+                <a className="px-3 py-2.5 rounded-sm border-2 border-[#ffffff] text-[#ffffff] text-sm font-bold hover:bg-[#3b24c9]/5 transition-colors" href="#">Call - 0800 EMERGE</a>
+                
+                {/* Primary CTA */}
+                <a className="px-3 py-2.5 rounded-sm bg-[#3b24c9] text-white text-sm font-bold hover:bg-[#2f1aa7] shadow-sm transition-colors" href="#">Message via WhatsApp</a>
               </div>
             </div>
           </div>
