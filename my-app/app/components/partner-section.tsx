@@ -27,9 +27,9 @@ export default function PartnerSection() {
   ];
 
   return (
-    <section id="partner" className="bg-[#0A74DA] py-14">
+    <section id="partner" className="bg-[#0A74DA] py-12 sm:py-14">
       <div className="mx-auto max-w-5xl px-5">
-        <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+        <div className="grid gap-5 sm:gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
           <div>
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-blue-100">
               Get Involved
@@ -45,16 +45,16 @@ export default function PartnerSection() {
           </p>
         </div>
 
-        <div className="mt-9 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {partners.map((partner) => (
             <article
               key={partner.name}
-              className="group relative flex min-h-[260px] flex-col justify-between overflow-hidden rounded-[2rem] border border-white/20 bg-white p-6 shadow-xl shadow-blue-950/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-950/20"
+              className="group relative flex min-h-[230px] flex-col justify-between overflow-hidden rounded-[calc(1.5rem-1px)] border border-white/20 bg-white p-5 shadow-xl shadow-blue-950/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-950/20 sm:rounded-[calc(2rem-1px)] sm:p-6 lg:min-h-[260px]"
             >
               <div>
                 <div className="mb-8 flex items-center justify-between">
                   <div
-                    className={`flex h-12 w-12 items-center justify-center rounded-2xl ${partner.tone} text-sm font-black shadow-sm`}
+                    className={`flex h-12 w-12 items-center justify-center rounded-[15px] ${partner.tone} text-sm font-black shadow-sm`}
                   >
                     {partner.marker}
                   </div>

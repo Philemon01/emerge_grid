@@ -14,10 +14,10 @@ export default function Header() {
         {/* CTA buttons to the extreme right */}
         <div className="hidden md:flex items-center gap-3">
           {/* Secondary CTA */}
-          <a className="px-6 py-2.5 rounded-sm border-2 border-[#0A74DA] text-[#0A74DA] text-sm font-bold hover:bg-[#0A74DA]/5 transition-colors" href="#">Call - 0800 EMERGE</a>
+          <a className="px-6 py-2.5 rounded-[1px] border-2 border-[#0A74DA] text-[#0A74DA] text-sm font-bold hover:bg-[#0A74DA]/5 transition-colors" href="#">Call - 0800 EMERGE</a>
           
           {/* Primary CTA */}
-          <a className="px-6 py-2.5 rounded-sm bg-[#0A74DA] text-white text-sm font-bold hover:bg-[#0757a4] shadow-sm transition-colors" href="#">Message via WhatsApp</a>
+          <a className="px-6 py-2.5 rounded-[1px] bg-[#0A74DA] text-white text-sm font-bold hover:bg-[#0757a4] shadow-sm transition-colors" href="#">Message via WhatsApp</a>
         </div>
       </div>
     </header>

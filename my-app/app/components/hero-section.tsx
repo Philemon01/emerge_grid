@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="relative px-5 pb-6 pt-1 sm:pb-8">
       <div className="mx-auto w-full max-w-7xl">
-        <div className="relative min-h-[440px] overflow-hidden rounded-[1.5rem] border border-white/10 shadow-2xl sm:h-[560px] sm:rounded-3xl lg:h-[650px]">
+        <div className="relative min-h-[440px] overflow-hidden rounded-[calc(1.5rem-1px)] border border-white/10 shadow-2xl sm:h-[560px] sm:rounded-[23px] lg:h-[650px]">
           <Image 
             src={heroImage} 
             alt="Emergency coordination hero" 
@@ -28,10 +28,10 @@ export default function HeroSection() {
 
               <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 {/* Secondary CTA */}
-                <a className="px-3 py-2.5 rounded-sm border-2 border-[#ffffff] text-center text-sm font-bold text-[#ffffff] transition-colors hover:bg-[#0A74DA]/10" href="#">Call - 0800 EMERGE</a>
+                <a className="px-3 py-2.5 rounded-[1px] border-2 border-[#ffffff] text-center text-sm font-bold text-[#ffffff] transition-colors hover:bg-[#0A74DA]/10" href="#">Call - 0800 EMERGE</a>
                 
                 {/* Primary CTA */}
-                <a className="px-3 py-2.5 rounded-sm bg-[#0A74DA] text-center text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#0757a4]" href="#">Message via WhatsApp</a>
+                <a className="px-3 py-2.5 rounded-[1px] bg-[#0A74DA] text-center text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#0757a4]" href="#">Message via WhatsApp</a>
               </div>
             </div>
           </div>

@@ -40,7 +40,7 @@ export default function ProblemSection() {
           {problems.map((problem, index) => (
             <article
               key={problem.value}
-              className="group relative overflow-hidden rounded-[1.5rem] border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/70 sm:rounded-[2rem] sm:p-6"
+              className="group relative overflow-hidden rounded-[calc(1.5rem-1px)] border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/70 sm:rounded-[calc(2rem-1px)] sm:p-6"
             >
               <div className="mb-8 flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-widest text-zinc-400">

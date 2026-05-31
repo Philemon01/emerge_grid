@@ -9,7 +9,7 @@ export default function WhoSection() {
   const marqueeRoles = ["Ambulance Drivers", "Paramedics", "Triage Nurses", "911 Dispatchers", "Civil Defense", "Volunteer Medics", "Red Cross", "Ministry of Health"];
 
   return (
-    <section id="who" className="px-6 py-12 lg:px-24 bg-white overflow-hidden">
+    <section id="who" className="px-5 py-12 bg-white overflow-hidden">
 
       <div className="max-w-5xl mx-auto">
         <SectionHeader 
@@ -19,27 +19,27 @@ export default function WhoSection() {
           centered
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-5 mb-12">
+        <div className="grid grid-cols-1 gap-4 mb-10 md:grid-cols-12 md:grid-rows-2 md:gap-5 md:mb-12">
           {/* Citizen Card - Large Feature */}
-          <div className="md:col-span-8 group p-6 sm:p-7 border border-zinc-200 rounded-[2rem] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
+          <div className="md:col-span-8 group p-5 sm:p-7 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
             <div>
               <div className="inline-flex px-3 py-1 rounded-full bg-[#0A74DA]/10 text-[#0A74DA] text-[10px] font-bold uppercase tracking-widest mb-4">Family & Public</div>
               <h4 className="text-2xl font-bold text-zinc-900 mb-3">{users[0].name}</h4>
               <p className="text-zinc-600 text-base leading-relaxed max-w-lg">{users[0].desc}</p>
             </div>
             <div className="mt-5 flex items-center gap-4 text-zinc-400">
-              <span className="text-sm font-medium italic">"I need to know which hospital has space before I drive."</span>
+              <span className="text-sm font-medium italic">&quot;I need to know which hospital has space before I drive.&quot;</span>
             </div>
           </div>
 
           {/* First Responder - Tall Card */}
-          <div className="md:col-span-4 md:row-span-2 group p-5 sm:p-6 border border-zinc-200 rounded-[2rem] bg-zinc-900 text-white hover:shadow-2xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden">
+          <div className="md:col-span-4 md:row-span-2 group p-5 sm:p-6 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-zinc-900 text-white hover:shadow-2xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden">
             <div className="relative z-10">
               <div className="inline-flex px-3 py-1 rounded-full bg-white/10 text-white/80 text-[10px] font-bold uppercase tracking-widest mb-4">Field Operations</div>
               <h4 className="text-2xl font-bold mb-3">{users[1].name}</h4>
               <p className="text-zinc-400 text-sm leading-relaxed">{users[1].desc}</p>
             </div>
-            <div className="relative z-10 mt-5 bg-white/5 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
+            <div className="relative z-10 mt-5 bg-white/5 p-4 rounded-[15px] backdrop-blur-sm border border-white/10">
               <div className="text-xs text-white/40 mb-2">Protocol Active</div>
               <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
                 <div className="h-full bg-[#0A74DA] w-2/3" />
@@ -49,7 +49,7 @@ export default function WhoSection() {
           </div>
 
           {/* Clinical Director - Wide Card */}
-          <div className="md:col-span-8 group p-5 sm:p-6 border border-zinc-200 rounded-[2rem] bg-white hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="md:col-span-8 group p-5 sm:p-6 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-white hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="max-w-md">
               <div className="inline-flex px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-[10px] font-bold uppercase tracking-widest mb-4">Hospital Leadership</div>
               <h4 className="text-2xl font-bold text-zinc-900 mb-2">{users[2].name}</h4>
@@ -71,19 +71,19 @@ export default function WhoSection() {
         <div className="overflow-hidden whitespace-nowrap">
           <div className="flex w-max items-center gap-12 animate-marquee">
             {marqueeRoles.map((role, idx) => (
-              <span key={idx} className="text-4xl sm:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#0A74DA]/10 transition-colors">
+              <span key={idx} className="text-3xl sm:text-5xl lg:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#0A74DA]/10 transition-colors">
                 {role}
               </span>
             ))}
             {marqueeRoles.map((role, idx) => (
-              <span key={idx} className="text-4xl sm:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#0A74DA]/10 transition-colors">
+              <span key={idx} className="text-3xl sm:text-5xl lg:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#0A74DA]/10 transition-colors">
                 {role}
               </span>
             ))}
           </div>
         </div>
-        <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-white to-transparent z-10" />
+        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent z-10 sm:w-40" />
+        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent z-10 sm:w-40" />
       </div>
     </section>
   );

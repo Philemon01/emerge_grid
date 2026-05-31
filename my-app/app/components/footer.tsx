@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="w-full px-3 pb-3 pt-6 sm:px-6 sm:pb-6">
-      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[22px] bg-[#07050d] px-6 py-10 text-white shadow-2xl sm:px-10 sm:py-12 lg:px-14">
+      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[17px] bg-[#07050d] px-5 py-8 text-white shadow-2xl sm:rounded-[21px] sm:px-10 sm:py-12 lg:px-14">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_28%_78%,rgba(10,116,218,0.42),transparent_24%),radial-gradient(circle_at_58%_88%,rgba(230,57,70,0.42),transparent_22%),radial-gradient(circle_at_77%_78%,rgba(255,255,255,0.2),transparent_20%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,5,13,0)_0%,rgba(7,5,13,0.55)_58%,rgba(7,5,13,0.05)_100%)]" />
 
@@ -17,7 +17,7 @@ export default function Footer() {
             </h2>
           </div>
 
-          <div className="mt-8 flex flex-col gap-8 lg:mt-10 lg:flex-row lg:items-end lg:justify-between">
+          <div className="mt-8 flex flex-col gap-6 lg:mt-10 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="text-xs text-zinc-400">Contact GRID at:</p>
               <div className="mt-2 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-white">
@@ -28,7 +28,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <nav className="flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-zinc-100 lg:justify-end">
+            <nav className="flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium text-zinc-100 lg:justify-end">
               <a href="#dashboard" className="transition-colors hover:text-blue-200">
                 Dashboard
               </a>
@@ -44,10 +44,10 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="mt-10 flex flex-col gap-8 lg:mt-14">
+          <div className="mt-10 flex flex-col gap-6 lg:mt-14 lg:gap-8">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
             
-              <div className="text-[clamp(3.25rem,10vw,9.5rem)] font-black leading-none tracking-tight text-white">
+              <div className="max-w-full break-words text-[clamp(2.3rem,15vw,9.5rem)] font-black leading-none tracking-tight text-white sm:text-[clamp(3.25rem,8vw,9.5rem)]">
                 E.M.E.R.G.E. GRID
               </div>
             </div>

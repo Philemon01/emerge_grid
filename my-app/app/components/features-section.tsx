@@ -1,5 +1,3 @@
-import SectionHeader from "./section-header";
-
 export default function FeaturesSection() {
   const features = [
     { icon: "📱", text: "Works on any phone — no smartphone or data needed" },
@@ -12,7 +10,7 @@ export default function FeaturesSection() {
 
   return (
     <section id="features" className="px-5 py-12">
-      <div className="max-w-5xl mx-auto bg-zinc-900 text-white rounded-[2rem] p-6 sm:rounded-[3rem] sm:p-10 lg:p-16 xl:p-20">
+      <div className="max-w-5xl mx-auto bg-zinc-900 text-white rounded-[calc(2rem-1px)] p-6 sm:rounded-[calc(3rem-1px)] sm:p-10 lg:p-16 xl:p-20">
         <div className="mb-8 sm:mb-12">
           <h3 className="text-xs font-bold uppercase tracking-widest text-white/50 mb-3">
             Key features
