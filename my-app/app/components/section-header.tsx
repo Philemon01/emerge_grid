@@ -10,7 +10,7 @@ export default function SectionHeader({
   centered?: boolean;
 }) {
   return (
-    <div className={`mb-12 ${centered ? 'text-center' : ''}`}>
+    <div className={`mb-8 sm:mb-10 lg:mb-12 ${centered ? 'text-center' : ''}`}>
       <h3 className="text-xs font-bold uppercase tracking-widest text-brand-primary mb-3">
         {title}
       </h3>
@@ -20,7 +20,7 @@ export default function SectionHeader({
         </h2>
       )}
       {description && (
-        <p className={`mt-4 text-lg text-zinc-600 max-w-2xl ${centered ? 'mx-auto' : ''}`}>
+        <p className={`mt-4 text-base leading-7 text-zinc-600 max-w-2xl sm:text-lg ${centered ? 'mx-auto' : ''}`}>
           {description}
         </p>
       )}

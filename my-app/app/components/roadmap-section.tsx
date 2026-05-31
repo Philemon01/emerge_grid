@@ -59,12 +59,12 @@ export default function RoadmapSection() {
         </div>
 
         <div className="mt-10">
-          <ol className="grid gap-5 lg:grid-cols-12">
+          <ol className="grid gap-4 sm:gap-5 lg:grid-cols-12">
             {steps.map((step, i) => (
               <li
                 key={step.phase}
-                className={`group relative overflow-hidden rounded-[2rem] border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/70 ${
-                  i === 0 ? "min-h-[430px] sm:p-8" : "min-h-[210px]"
+                className={`group relative overflow-hidden rounded-[1.5rem] border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/70 sm:rounded-[2rem] sm:p-6 ${
+                  i === 0 ? "min-h-[300px] lg:min-h-[430px] lg:p-8" : "min-h-[190px]"
                 } ${step.surface} ${step.size}`}
               >
                 <div className="relative z-10 flex h-full flex-col justify-between">
@@ -75,7 +75,7 @@ export default function RoadmapSection() {
                       </p>
                       <h3
                         className={`mt-3 font-bold tracking-tight ${
-                          i === 0 ? "text-3xl sm:text-5xl" : "text-2xl"
+                          i === 0 ? "text-3xl sm:text-4xl lg:text-5xl" : "text-2xl"
                         }`}
                       >
                         {step.label}
@@ -87,7 +87,7 @@ export default function RoadmapSection() {
                   </div>
 
                   <p
-                    className={`mt-8 max-w-md leading-7 ${
+                    className={`mt-6 max-w-md leading-7 sm:mt-8 ${
                       i === 0 ? "text-base text-zinc-300 sm:text-lg" : "text-sm text-zinc-600"
                     }`}
                   >

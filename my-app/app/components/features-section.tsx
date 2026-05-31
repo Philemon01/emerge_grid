@@ -12,8 +12,8 @@ export default function FeaturesSection() {
 
   return (
     <section id="features" className="px-5 py-12">
-      <div className="max-w-5xl mx-auto bg-zinc-900 text-white rounded-[3rem] p-8 sm:p-12 lg:p-20">
-        <div className="mb-12">
+      <div className="max-w-5xl mx-auto bg-zinc-900 text-white rounded-[2rem] p-6 sm:rounded-[3rem] sm:p-10 lg:p-16 xl:p-20">
+        <div className="mb-8 sm:mb-12">
           <h3 className="text-xs font-bold uppercase tracking-widest text-white/50 mb-3">
             Key features
           </h3>
@@ -22,7 +22,7 @@ export default function FeaturesSection() {
           </h2>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-10">
           {features.map((f, i) => (
             <div key={i} className="flex gap-4 items-start">
               <span className="text-2xl">{f.icon}</span>

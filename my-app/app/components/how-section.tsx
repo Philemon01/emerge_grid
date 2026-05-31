@@ -2,7 +2,7 @@ import SectionHeader from "./section-header";
 
 export default function HowSection() {
   return (
-    <section id="how" className="px-6 py-12 lg:px-24">
+    <section id="how" className="px-5 py-12">
       <div className="max-w-5xl mx-auto">
         <SectionHeader 
           title="How it works" 
@@ -10,9 +10,9 @@ export default function HowSection() {
           description="Built for everyone — from feature phones to state-of-the-art command centers."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:grid-rows-2 lg:gap-6">
           {/* Primary Feature: Hotline */}
-          <div className="md:col-span-2 md:row-span-2 group relative overflow-hidden p-8 sm:p-10 border border-zinc-200 rounded-[2rem] bg-zinc-900 text-white transition-all duration-300 hover:shadow-2xl">
+          <div className="md:col-span-2 md:row-span-2 group relative overflow-hidden p-6 sm:p-8 lg:p-10 border border-zinc-200 rounded-[1.5rem] sm:rounded-[2rem] bg-zinc-900 text-white transition-all duration-300 hover:shadow-2xl">
             <div className="relative z-10 flex flex-col h-full justify-between">
               <div>
                 <div className="text-4xl mb-6">📞</div>
@@ -22,7 +22,7 @@ export default function HowSection() {
                 </p>
               </div>
               <div className="mt-8">
-                <span className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 text-white font-bold text-sm group-hover:bg-white/20 transition-colors cursor-pointer">
+                <span className="inline-flex max-w-full items-center gap-2 rounded-full bg-white/10 px-4 py-3 text-sm font-bold text-white transition-colors group-hover:bg-white/20 sm:px-6">
                   Dial 0800-EMERGE <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </span>
               </div>
@@ -32,14 +32,14 @@ export default function HowSection() {
           </div>
 
           {/* Secondary Feature: WhatsApp */}
-          <div className="group p-6 border border-zinc-200 rounded-[2rem] bg-white hover:bg-zinc-50 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between">
+          <div className="group p-5 sm:p-6 border border-zinc-200 rounded-[1.5rem] sm:rounded-[2rem] bg-white hover:bg-zinc-50 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between">
             <div className="text-4xl mb-6">💬</div>
             <h4 className="text-xl font-bold text-zinc-900 mb-2">WhatsApp GRID</h4>
             <p className="text-zinc-600 text-sm leading-relaxed">Report incidents, receive first-aid guidance, and notify hospitals instantly via a simple chat interface.</p>
           </div>
 
           {/* Secondary Feature: Dashboard */}
-          <div className="group p-6 border border-zinc-200 rounded-[2rem] bg-white hover:bg-zinc-50 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between">
+          <div className="group p-5 sm:p-6 border border-zinc-200 rounded-[1.5rem] sm:rounded-[2rem] bg-white hover:bg-zinc-50 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between">
             <div className="text-4xl mb-6">🗺</div>
             <h4 className="text-xl font-bold text-zinc-900 mb-2">Live Dashboard</h4>
             <p className="text-zinc-600 text-sm leading-relaxed">Real-time mapping of healthcare capacity. Open to the public with no login required for maximum accessibility.</p>

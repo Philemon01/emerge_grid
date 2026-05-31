@@ -20,7 +20,7 @@ export default function ProblemSection() {
   return (
     <section id="problem" className="bg-zinc-50 px-5 py-12">
       <div className="mx-auto max-w-5xl">
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+        <div className="grid gap-5 sm:gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-[#0A74DA]">
               The problem
@@ -36,11 +36,11 @@ export default function ProblemSection() {
           </p>
         </div>
 
-        <div className="mt-9 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {problems.map((problem, index) => (
             <article
               key={problem.value}
-              className="group relative overflow-hidden rounded-[2rem] border border-zinc-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/70"
+              className="group relative overflow-hidden rounded-[1.5rem] border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/70 sm:rounded-[2rem] sm:p-6"
             >
               <div className="mb-8 flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-widest text-zinc-400">
@@ -49,7 +49,7 @@ export default function ProblemSection() {
                 <span className="h-2 w-2 rounded-full bg-[#0A74DA]/30 transition-colors group-hover:bg-[#0A74DA]" />
               </div>
 
-              <h3 className="text-3xl font-black tracking-tight text-zinc-950">
+              <h3 className="text-2xl font-black tracking-tight text-zinc-950 sm:text-3xl">
                 {problem.value}
               </h3>
               <p className="mt-3 text-sm font-bold leading-6 text-zinc-700">

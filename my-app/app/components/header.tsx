@@ -1,13 +1,15 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
-    <header className="w-full py-8">
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <header className="w-full py-4 sm:py-6 lg:py-8">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 flex items-center justify-between gap-4">
         {/* Logo to the left */}
-        <a href="/" className="flex items-center gap-3 group">
-          <div className="px-4 py-1.5 rounded-full border border-zinc-200 text-sm font-bold tracking-tight group-hover:border-zinc-800 transition-colors">
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="px-3 py-1.5 rounded-full border border-zinc-200 text-xs font-bold tracking-tight group-hover:border-zinc-800 transition-colors sm:px-4 sm:text-sm">
             EMERGE.GRID
           </div>
-        </a>
+        </Link>
 
         {/* CTA buttons to the extreme right */}
         <div className="hidden md:flex items-center gap-3">
