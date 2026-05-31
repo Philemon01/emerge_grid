@@ -2,7 +2,7 @@ import SectionHeader from "./section-header";
 
 export default function HowSection() {
   return (
-    <section id="how" className="py-20 px-6 lg:px-24">
+    <section id="how" className="px-6 py-12 lg:px-24">
       <div className="max-w-5xl mx-auto">
         <SectionHeader 
           title="How it works" 
@@ -21,7 +21,7 @@ export default function HowSection() {
                   Speak naturally, get hospital availability in &lt;4s. Optimized for local dialects and works on any phone without data.
                 </p>
               </div>
-              <div className="mt-12">
+              <div className="mt-8">
                 <span className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 text-white font-bold text-sm group-hover:bg-white/20 transition-colors cursor-pointer">
                   Dial 0800-EMERGE <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </span>

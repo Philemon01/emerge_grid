@@ -25,14 +25,14 @@ export default function RoadmapSection() {
   ];
 
   return (
-    <section id="roadmap" className="py-24 px-6 lg:px-24">
+    <section id="roadmap" className="px-6 py-12 lg:px-24">
       <div className="max-w-6xl mx-auto">
         <SectionHeader 
           title="Roadmap" 
           subtitle="The path to national coverage"
         />
         
-        <div className="mt-12">
+        <div className="mt-8">
           <ol className="relative border-l border-zinc-200 ml-3">
             {steps.map((step, i) => (
               <li key={i} className="mb-12 ml-8">

@@ -4,7 +4,7 @@ import heroImage from "../asset/images/Rectangle 33 (1).png";
 
 export default function HeroSection() {
   return (
-    <section className="relative py-8 sm:py-7 px-5">
+    <section className="relative px-5 pb-6 pt-2 sm:pb-6 sm:pt-1">
       <div className="mx-auto w-full max-w-7xl">
         <div className="relative overflow-hidden rounded-3xl border border-white/10 shadow-2xl min-h-[500px] sm:h-[600px] lg:h-[650px]">
           <Image 

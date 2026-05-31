@@ -8,7 +8,7 @@ export default function WhoSection() {
   ];
 
   return (
-    <section id="who" className="py-24 px-6 lg:px-24 bg-white overflow-hidden">
+    <section id="who" className="px-6 py-12 lg:px-24 bg-white overflow-hidden">
 
       <div className="max-w-5xl mx-auto">
         <SectionHeader 
@@ -26,7 +26,7 @@ export default function WhoSection() {
               <h4 className="text-2xl font-bold text-zinc-900 mb-4">{users[0].name}</h4>
               <p className="text-zinc-600 text-base leading-relaxed max-w-lg">{users[0].desc}</p>
             </div>
-            <div className="mt-12 flex items-center gap-4 text-zinc-400">
+            <div className="mt-8 flex items-center gap-4 text-zinc-400">
               <span className="text-sm font-medium italic">"I need to know which hospital has space before I drive."</span>
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function WhoSection() {
               <h4 className="text-2xl font-bold mb-4">{users[1].name}</h4>
               <p className="text-zinc-400 text-sm leading-relaxed">{users[1].desc}</p>
             </div>
-            <div className="relative z-10 mt-12 bg-white/5 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
+            <div className="relative z-10 mt-8 bg-white/5 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
               <div className="text-xs text-white/40 mb-2">Protocol Active</div>
               <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
                 <div className="h-full bg-[#3b24c9] w-2/3" />
@@ -66,7 +66,7 @@ export default function WhoSection() {
       </div>
 
       {/* Repetitive Slider (Marquee Effect) */}
-      <div className="mt-12 border-y border-zinc-100 bg-zinc-50/50 py-10 relative">
+      <div className="mt-8 border-y border-zinc-100 bg-zinc-50/50 py-8 relative">
         <div className="flex gap-12 whitespace-nowrap overflow-hidden">
           <div className="flex gap-12 items-center animate-marquee shrink-0">
             {["Ambulance Drivers", "Paramedics", "Triage Nurses", "911 Dispatchers", "Civil Defense", "Volunteer Medics", "Red Cross", "Ministry of Health"].map((role, idx) => (

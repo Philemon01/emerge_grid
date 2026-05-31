@@ -1,17 +1,21 @@
 export default function Header() {
   return (
-    <header className="w-full py-6">
-      <div className="max-w-6xl mx-auto px-6 lg:px-24 flex items-center justify-between">
+    <header className="w-full py-8">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo to the left */}
-        <div className="flex items-center gap-3">
-          <div className="px-3 py-1 rounded-full border border-solid border-slate-200 text-sm font-semibold">EMERGE.GRID</div>
-        </div>
+        <a href="/" className="flex items-center gap-3 group">
+          <div className="px-4 py-1.5 rounded-full border border-zinc-200 text-sm font-bold tracking-tight group-hover:border-zinc-800 transition-colors">
+            EMERGE.GRID
+          </div>
+        </a>
 
-        {/* CTA buttons to the extreme right, visible on medium screens and up */}
+        {/* CTA buttons to the extreme right */}
         <div className="hidden md:flex items-center gap-3">
-          {/* Adjusted colors for visibility on a light header background */}
-          <a className="btn-outline text-zinc-700 border-zinc-300 hover:border-zinc-400 hover:text-zinc-900" href="#">Call - 0800 EMERGE</a>
-          <a className="btn-primary bg-[#3b24c9] text-white hover:bg-[#2f1aa7]" href="#">Message via WhatsApp</a>
+          {/* Secondary CTA */}
+          <a className="px-6 py-2.5 rounded-full border-2 border-[#3b24c9] text-[#3b24c9] text-sm font-bold hover:bg-[#3b24c9]/5 transition-colors" href="#">Call - 0800 EMERGE</a>
+          
+          {/* Primary CTA */}
+          <a className="px-6 py-2.5 rounded-full bg-[#3b24c9] text-white text-sm font-bold hover:bg-[#2f1aa7] shadow-sm transition-colors" href="#">Message via WhatsApp</a>
         </div>
       </div>
     </header>

@@ -11,8 +11,8 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="py-20 px-6 lg:px-24 bg-zinc-900 text-white rounded-[3rem] mx-4 sm:mx-8">
-      <div className="max-w-6xl mx-auto">
+    <section id="features" className="px-5 py-12">
+      <div className="max-w-5xl mx-auto bg-zinc-900 text-white rounded-[3rem] p-8 sm:p-12 lg:p-20">
         <div className="mb-12">
           <h3 className="text-xs font-bold uppercase tracking-widest text-white/50 mb-3">
             Key features

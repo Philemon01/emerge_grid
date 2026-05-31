@@ -2,7 +2,7 @@ import SectionHeader from "./section-header";
 
 export default function TrustSection() {
   return (
-    <section id="trust" className="py-24 px-6 lg:px-24">
+    <section id="trust" className="px-6 py-12 lg:px-24">
       <div className="max-w-6xl mx-auto text-center">
         <SectionHeader 
           title="Trust & ethics" 

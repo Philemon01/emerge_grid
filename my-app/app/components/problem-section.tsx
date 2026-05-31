@@ -2,7 +2,7 @@ import SectionHeader from "./section-header";
 
 export default function ProblemSection() {
   return (
-    <section id="problem" className="py-20 px-6 lg:px-24 bg-zinc-50">
+    <section id="problem" className="px-6 py-12 lg:px-24 bg-zinc-50">
       <div className="max-w-6xl mx-auto">
         <SectionHeader 
           title="The problem" 
