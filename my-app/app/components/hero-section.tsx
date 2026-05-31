@@ -21,7 +21,7 @@ export default function HeroSection() {
             <div className="max-w-2xl">
               <p className="text-sm tracking-[0.24em] uppercase text-white/75 mb-4">Realtime Hospital</p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
-                Visibility for <span className="text-[#c6d6ff]">Port Harcourt</span> Sector
+                Visibility for <span className="text-[#B9E0FF]">Port Harcourt</span> Sector
               </h1>
               <p className="mt-5 text-lg text-white/80 max-w-2xl">
                 High-yield operational dashboard tracking triage latency, critical trauma levels, and bed availabilities across Port Harcourt's healthcare network.
@@ -29,10 +29,10 @@ export default function HeroSection() {
 
               <div className="hidden md:flex mt-5 items-center gap-3">
                 {/* Secondary CTA */}
-                <a className="px-3 py-2.5 rounded-sm border-2 border-[#ffffff] text-[#ffffff] text-sm font-bold hover:bg-[#3b24c9]/5 transition-colors" href="#">Call - 0800 EMERGE</a>
+                <a className="px-3 py-2.5 rounded-sm border-2 border-[#ffffff] text-[#ffffff] text-sm font-bold hover:bg-[#0A74DA]/10 transition-colors" href="#">Call - 0800 EMERGE</a>
                 
                 {/* Primary CTA */}
-                <a className="px-3 py-2.5 rounded-sm bg-[#3b24c9] text-white text-sm font-bold hover:bg-[#2f1aa7] shadow-sm transition-colors" href="#">Message via WhatsApp</a>
+                <a className="px-3 py-2.5 rounded-sm bg-[#0A74DA] text-white text-sm font-bold hover:bg-[#0757a4] shadow-sm transition-colors" href="#">Message via WhatsApp</a>
               </div>
             </div>
           </div>

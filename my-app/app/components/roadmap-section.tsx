@@ -3,7 +3,7 @@ export default function RoadmapSection() {
     {
       phase: "Phase 1 (Now)",
       label: "Live foundation",
-      accent: "bg-[#3b24c9]",
+      accent: "bg-[#0A74DA]",
       surface: "bg-zinc-900 text-white border-zinc-800",
       muted: "text-zinc-400",
       size: "lg:col-span-7 lg:row-span-2",
@@ -97,7 +97,7 @@ export default function RoadmapSection() {
 
                 {i === 0 && (
                   <>
-                    <div className="absolute -bottom-20 -right-16 h-56 w-56 rounded-full bg-[#3b24c9]/30 blur-3xl transition-colors group-hover:bg-[#3b24c9]/40" />
+                    <div className="absolute -bottom-20 -right-16 h-56 w-56 rounded-full bg-[#0A74DA]/30 blur-3xl transition-colors group-hover:bg-[#0A74DA]/40" />
                     <div className="absolute bottom-8 right-8 hidden h-28 w-28 rounded-full border border-white/10 bg-white/5 sm:block" />
                   </>
                 )}

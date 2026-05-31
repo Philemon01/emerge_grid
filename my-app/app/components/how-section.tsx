@@ -28,7 +28,7 @@ export default function HowSection() {
               </div>
             </div>
             {/* Decorative Glow */}
-            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-[#3b24c9]/20 rounded-full blur-3xl group-hover:bg-[#3b24c9]/30 transition-colors" />
+            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-[#0A74DA]/20 rounded-full blur-3xl group-hover:bg-[#0A74DA]/30 transition-colors" />
           </div>
 
           {/* Secondary Feature: WhatsApp */}

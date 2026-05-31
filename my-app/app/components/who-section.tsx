@@ -23,7 +23,7 @@ export default function WhoSection() {
           {/* Citizen Card - Large Feature */}
           <div className="md:col-span-8 group p-6 sm:p-7 border border-zinc-200 rounded-[2rem] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
             <div>
-              <div className="inline-flex px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-[10px] font-bold uppercase tracking-widest mb-4">Family & Public</div>
+              <div className="inline-flex px-3 py-1 rounded-full bg-[#0A74DA]/10 text-[#0A74DA] text-[10px] font-bold uppercase tracking-widest mb-4">Family & Public</div>
               <h4 className="text-2xl font-bold text-zinc-900 mb-3">{users[0].name}</h4>
               <p className="text-zinc-600 text-base leading-relaxed max-w-lg">{users[0].desc}</p>
             </div>
@@ -42,10 +42,10 @@ export default function WhoSection() {
             <div className="relative z-10 mt-5 bg-white/5 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
               <div className="text-xs text-white/40 mb-2">Protocol Active</div>
               <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
-                <div className="h-full bg-[#3b24c9] w-2/3" />
+                <div className="h-full bg-[#0A74DA] w-2/3" />
               </div>
             </div>
-            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-[#3b24c9]/20 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-[#0A74DA]/20 rounded-full blur-3xl" />
           </div>
 
           {/* Clinical Director - Wide Card */}
@@ -71,12 +71,12 @@ export default function WhoSection() {
         <div className="overflow-hidden whitespace-nowrap">
           <div className="flex w-max items-center gap-12 animate-marquee">
             {marqueeRoles.map((role, idx) => (
-              <span key={idx} className="text-4xl sm:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#3b24c9]/10 transition-colors">
+              <span key={idx} className="text-4xl sm:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#0A74DA]/10 transition-colors">
                 {role}
               </span>
             ))}
             {marqueeRoles.map((role, idx) => (
-              <span key={idx} className="text-4xl sm:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#3b24c9]/10 transition-colors">
+              <span key={idx} className="text-4xl sm:text-6xl font-black text-zinc-200 uppercase tracking-tighter hover:text-[#0A74DA]/10 transition-colors">
                 {role}
               </span>
             ))}
