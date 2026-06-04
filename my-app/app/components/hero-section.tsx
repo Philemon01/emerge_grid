@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import heroImage from "../asset/images/Rectangle 33 (1).png";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
@@ -17,7 +20,13 @@ export default function HeroSection() {
           <div className="absolute inset-0 flex flex-col justify-center p-5 sm:p-10 lg:p-20">
             {/* <div className="mb-8 text-sm font-semibold uppercase tracking-[0.3em] text-white/90">EMERGE_GRID</div> */}
 
-            <div className="max-w-2xl">
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="max-w-2xl"
+            >
               <p className="text-xs tracking-[0.2em] uppercase text-white/75 mb-4 sm:text-sm sm:tracking-[0.24em]">Realtime Hospital</p>
               <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
                 Visibility for <span className="text-[#B9E0FF]">Port Harcourt</span> Sector
@@ -33,7 +42,7 @@ export default function HeroSection() {
                 {/* Primary CTA */}
                 <a className="px-3 py-2.5 rounded-[1px] bg-[#0A74DA] text-center text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#0757a4]" href="#">Message via WhatsApp</a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

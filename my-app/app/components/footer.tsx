@@ -1,7 +1,17 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Footer() {
   return (
     <footer className="w-full px-3 pb-3 pt-6 sm:px-6 sm:pb-6">
-      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[17px] bg-[#07050d] px-5 py-8 text-white shadow-2xl sm:rounded-[21px] sm:px-10 sm:py-12 lg:px-14">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.98 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="relative mx-auto max-w-7xl overflow-hidden rounded-[17px] bg-[#07050d] px-5 py-8 text-white shadow-2xl sm:rounded-[21px] sm:px-10 sm:py-12 lg:px-14"
+      >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_28%_78%,rgba(10,116,218,0.42),transparent_24%),radial-gradient(circle_at_58%_88%,rgba(230,57,70,0.42),transparent_22%),radial-gradient(circle_at_77%_78%,rgba(255,255,255,0.2),transparent_20%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,5,13,0)_0%,rgba(7,5,13,0.55)_58%,rgba(7,5,13,0.05)_100%)]" />
 
@@ -61,7 +71,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </footer>
   );
 }

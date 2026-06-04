@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function ProblemSection() {
   const problems = [
     {
@@ -38,8 +42,12 @@ export default function ProblemSection() {
 
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {problems.map((problem, index) => (
-            <article
+            <motion.article
               key={problem.value}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-[calc(1.5rem-1px)] border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/70 sm:rounded-[calc(2rem-1px)] sm:p-6"
             >
               <div className="mb-8 flex items-center justify-between">
@@ -60,7 +68,7 @@ export default function ProblemSection() {
               </p>
 
               <div className="absolute inset-x-6 bottom-0 h-1 rounded-t-full bg-[#0A74DA]" />
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>

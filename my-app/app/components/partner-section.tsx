@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function PartnerSection() {
   const partners = [
     {
@@ -39,16 +43,26 @@ export default function PartnerSection() {
             </h2>
           </div>
 
-          <p className="max-w-xl text-base leading-7 text-blue-50/90 lg:justify-self-end">
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="max-w-xl text-base leading-7 text-blue-50/90 lg:justify-self-end"
+          >
             Help us give every responder a full picture and save lives through
             better coordination.
-          </p>
+          </motion.p>
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {partners.map((partner) => (
-            <article
+          {partners.map((partner, idx) => (
+            <motion.article
               key={partner.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="group relative flex min-h-[230px] flex-col justify-between overflow-hidden rounded-[calc(1.5rem-1px)] border border-white/20 bg-white p-5 shadow-xl shadow-blue-950/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-950/20 sm:rounded-[calc(2rem-1px)] sm:p-6 lg:min-h-[260px]"
             >
               <div>
@@ -78,7 +92,7 @@ export default function PartnerSection() {
                   &rarr;
                 </span>
               </a>
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>

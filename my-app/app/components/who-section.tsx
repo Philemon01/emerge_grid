@@ -1,4 +1,7 @@
+"use client";
+
 import SectionHeader from "./section-header";
+import { motion } from "framer-motion";
 
 export default function WhoSection() {
   const users = [
@@ -21,7 +24,13 @@ export default function WhoSection() {
 
         <div className="grid grid-cols-1 gap-4 mb-10 md:grid-cols-12 md:grid-rows-2 md:gap-5 md:mb-12">
           {/* Citizen Card - Large Feature */}
-          <div className="md:col-span-8 group p-5 sm:p-7 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="md:col-span-8 group p-5 sm:p-7 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-zinc-50 hover:bg-white hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+          >
             <div>
               <div className="inline-flex px-3 py-1 rounded-full bg-[#0A74DA]/10 text-[#0A74DA] text-[10px] font-bold uppercase tracking-widest mb-4">Family & Public</div>
               <h4 className="text-2xl font-bold text-zinc-900 mb-3">{users[0].name}</h4>
@@ -30,10 +39,16 @@ export default function WhoSection() {
             <div className="mt-5 flex items-center gap-4 text-zinc-400">
               <span className="text-sm font-medium italic">&quot;I need to know which hospital has space before I drive.&quot;</span>
             </div>
-          </div>
+          </motion.div>
 
           {/* First Responder - Tall Card */}
-          <div className="md:col-span-4 md:row-span-2 group p-5 sm:p-6 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-zinc-900 text-white hover:shadow-2xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="md:col-span-4 md:row-span-2 group p-5 sm:p-6 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-zinc-900 text-white hover:shadow-2xl transition-all duration-500 flex flex-col justify-between relative overflow-hidden"
+          >
             <div className="relative z-10">
               <div className="inline-flex px-3 py-1 rounded-full bg-white/10 text-white/80 text-[10px] font-bold uppercase tracking-widest mb-4">Field Operations</div>
               <h4 className="text-2xl font-bold mb-3">{users[1].name}</h4>
@@ -46,10 +61,16 @@ export default function WhoSection() {
               </div>
             </div>
             <div className="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-[#0A74DA]/20 rounded-full blur-3xl" />
-          </div>
+          </motion.div>
 
           {/* Clinical Director - Wide Card */}
-          <div className="md:col-span-8 group p-5 sm:p-6 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-white hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="md:col-span-8 group p-5 sm:p-6 border border-zinc-200 rounded-[calc(1.5rem-1px)] sm:rounded-[calc(2rem-1px)] bg-white hover:shadow-xl transition-all duration-500 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+          >
             <div className="max-w-md">
               <div className="inline-flex px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-[10px] font-bold uppercase tracking-widest mb-4">Hospital Leadership</div>
               <h4 className="text-2xl font-bold text-zinc-900 mb-2">{users[2].name}</h4>
@@ -62,7 +83,7 @@ export default function WhoSection() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

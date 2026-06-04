@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function RoadmapSection() {
   const steps = [
     {
@@ -61,8 +65,12 @@ export default function RoadmapSection() {
         <div className="mt-10">
           <ol className="grid gap-4 sm:gap-5 lg:grid-cols-12">
             {steps.map((step, i) => (
-              <li
+              <motion.li
                 key={step.phase}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.15 }}
                 className={`group relative overflow-hidden rounded-[calc(1.5rem-1px)] border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/70 sm:rounded-[calc(2rem-1px)] sm:p-6 ${
                   i === 0 ? "min-h-[300px] lg:min-h-[430px] lg:p-8" : "min-h-[190px]"
                 } ${step.surface} ${step.size}`}
@@ -104,7 +112,7 @@ export default function RoadmapSection() {
                 <div
                   className={`absolute inset-x-6 bottom-0 h-1 rounded-t-full ${step.accent}`}
                 />
-              </li>
+              </motion.li>
             ))}
           </ol>
         </div>

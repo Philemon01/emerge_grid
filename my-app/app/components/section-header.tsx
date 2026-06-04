@@ -1,3 +1,8 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { FADE_UP } from "./animations";
+
 export default function SectionHeader({ 
   title, 
   subtitle, 
@@ -10,7 +15,10 @@ export default function SectionHeader({
   centered?: boolean;
 }) {
   return (
-    <div className={`mb-8 sm:mb-10 lg:mb-12 ${centered ? 'text-center' : ''}`}>
+    <motion.div 
+      {...FADE_UP()}
+      className={`mb-8 sm:mb-10 lg:mb-12 ${centered ? 'text-center' : ''}`}
+    >
       <h3 className="text-xs font-bold uppercase tracking-widest text-brand-primary mb-3">
         {title}
       </h3>
@@ -24,6 +32,6 @@ export default function SectionHeader({
           {description}
         </p>
       )}
-    </div>
+    </motion.div>
   );
 }
