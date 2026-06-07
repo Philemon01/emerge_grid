@@ -46,10 +46,11 @@ function ProfileCheck() {
             <div className="px-4 py-2 bg-gray-50 border-b border-gray-100">
               <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Sign in as</p>
             </div>
-            <Link href="/login/hospital" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#0A74DA] hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
+            
+            <Link href="/auth" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#0A74DA] hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
               Hospital
             </Link>
-            <Link href="/login/admin" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#0A74DA] hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
+            <Link href="/auth/admin" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#0A74DA] hover:text-white transition-colors" onClick={() => setIsOpen(false)}>
               Admin
             </Link>
           </motion.div>
