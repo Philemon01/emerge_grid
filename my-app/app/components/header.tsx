@@ -87,7 +87,7 @@ export default function Header() {
           </div>
 
           {/* Profile Dropdown */}
-          <ProfileCheck />
+          {/* <ProfileCheck /> */}
         </div>
       </div>
     </motion.header>
