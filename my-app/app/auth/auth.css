@@ -1,0 +1,14 @@
+/* Authentication specific styles */
+@reference "../globals.css";
+
+.auth-input-focus {
+  @apply focus:ring-2 focus:ring-[#0A74DA]/20 focus:border-[#0A74DA] transition-all outline-none;
+}
+
+.auth-button {
+  @apply py-[0.875rem] bg-[#0A74DA] text-white font-bold rounded-lg hover:bg-[#0757a4] transition-colors shadow-lg shadow-[#0A74DA]/20;
+}
+
+.auth-card {
+  @apply w-full max-w-md p-8 rounded-2xl shadow-xl border;
+}
