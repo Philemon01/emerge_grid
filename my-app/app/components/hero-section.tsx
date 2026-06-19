@@ -1,16 +1,10 @@
 "use client";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { useState } from "react";
-import Image from "next/image";
-import heroImage from "../asset/images/Rectangle 33 (1).png";
-import { useWebSocketAudio } from "../hooks/useWebSocketAudio";
-=======
+import { useState, type MouseEvent } from "react";
 import Image from "next/image";
 import heroImage from "../asset/images/Rectangle 33 (1).png";
 import { motion } from "framer-motion";
->>>>>>> c66529f327b99dd19f7745c1aaa69487928858f9
+import { useWebSocketAudio } from "../hooks/useWebSocketAudio";
 
 export default function HeroSection() {
   const [status, setStatus] = useState("Offline");
@@ -18,7 +12,7 @@ export default function HeroSection() {
     onStatusChange: setStatus,
   });
 
-  const handleCallClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleCallClick = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (isConnected) {
       endCall();
@@ -27,13 +21,6 @@ export default function HeroSection() {
     }
   };
 
-=======
-import Image from "next/image";
-import heroImage from "../asset/images/Rectangle 33 (1).png";
-import { motion } from "framer-motion";
-
-export default function HeroSection() {
->>>>>>> c66529f327b99dd19f7745c1aaa69487928858f9
   return (
     <section className="relative px-5 pb-6 pt-1 sm:pb-8">
       <div className="mx-auto w-full max-w-7xl">
@@ -42,10 +29,7 @@ export default function HeroSection() {
             src={heroImage} 
             alt="Emergency coordination hero" 
             fill 
-<<<<<<< HEAD
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-=======
->>>>>>> c66529f327b99dd19f7745c1aaa69487928858f9
             className="object-cover" 
             priority 
           />
@@ -69,7 +53,6 @@ export default function HeroSection() {
               </p>
 
               <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-<<<<<<< HEAD
                 {/* Call Button - Now Interactive */}
                 <button 
                   onClick={handleCallClick}
@@ -88,10 +71,6 @@ export default function HeroSection() {
                     {status}
                   </div>
                 )}
-=======
-                {/* Secondary CTA */}
-                <a className="px-3 py-2.5 rounded-[1px] border-2 border-[#ffffff] text-center text-sm font-bold text-[#ffffff] transition-colors hover:bg-[#0A74DA]/10" href="#">Call - 0800 EMERGE</a>
->>>>>>> c66529f327b99dd19f7745c1aaa69487928858f9
                 
                 {/* Primary CTA */}
                 <a className="px-3 py-2.5 rounded-[1px] bg-[#0A74DA] text-center text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#0757a4]" href="#">Message via WhatsApp</a>
