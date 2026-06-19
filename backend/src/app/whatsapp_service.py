@@ -1,6 +1,6 @@
 import logging
 import requests
-from app.config import settings
+from .config import settings
 
 logger = logging.getLogger("app.whatsapp_service")
 
@@ -9,8 +9,9 @@ class WhatsAppService:
         # 🎯 CRITICAL BUG FIX: Swapped marketing domain for Meta's active Graph API endpoint
         self.phone_number_id = settings.PHONE_NUMBER_ID
         self.access_token = settings.WHATSAPP_TOKEN
+        self.graph_api_version = settings.WHATSAPP_GRAPH_API_VERSION
         
-        self.base_url = f"https://facebook.com{self.phone_number_id}/messages"
+        self.base_url = f"https://graph.facebook.com/{self.graph_api_version}/{self.phone_number_id}/messages"
         self.headers = {
             "Authorization": f"Bearer {self.access_token}",
             "Content-Type": "application/json"

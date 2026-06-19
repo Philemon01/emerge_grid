@@ -3,7 +3,7 @@
 import logging
 import uvicorn
 from fastapi import FastAPI
-from src.app.vapi_route import handle_vapi_voice_tool as vapi_router
+from src.app.vapi_route import router as vapi_router
 
 # Configure production console terminal log views
 logging.basicConfig(
@@ -33,5 +33,4 @@ if __name__ == "__main__":
     is_production = os.environ.get("RENDER") is not None
     reload_setting = False if is_production else True
 
-uvicorn.run("main:app", host="0.0.0.0", port=port, reload=reload_setting)
-
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=reload_setting)
