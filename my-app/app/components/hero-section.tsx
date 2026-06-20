@@ -62,7 +62,7 @@ export default function HeroSection() {
                       : "border-[#ffffff] text-[#ffffff] hover:bg-[#0A74DA]/10"
                   }`}
                 >
-                  {isConnected ? "Disconnect Call" : "Call - 0800 EMERGE"}
+                  {isConnected ? "Disconnect Call" : "Call - +19712 EMERGE"}
                 </button>
                 
                 {/* Status Indicator */}

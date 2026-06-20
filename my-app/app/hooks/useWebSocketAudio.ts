@@ -8,6 +8,11 @@ interface UseWebSocketAudioOptions {
 
 const DEFAULT_BACKEND_URL = "http://localhost:5000";
 
+interface WindowWithWebkitAudioContext extends Window {
+  AudioContext?: typeof AudioContext;
+  webkitAudioContext?: typeof AudioContext;
+}
+
 const getWebSocketUrl = () => {
   const backendUrl =
     process.env.NEXT_PUBLIC_BACKEND_URL?.trim() || DEFAULT_BACKEND_URL;
@@ -76,8 +81,10 @@ export const useWebSocketAudio = ({
 
         try {
           // Initialize audio context
-          audioContextRef.current = new (window.AudioContext ||
-            (window as any).webkitAudioContext)({
+          const win = window as WindowWithWebkitAudioContext;
+          const AudioContextConstructor = (win.AudioContext ||
+            win.webkitAudioContext) as typeof AudioContext;
+          audioContextRef.current = new AudioContextConstructor({
             sampleRate: 16000,
           });
 
