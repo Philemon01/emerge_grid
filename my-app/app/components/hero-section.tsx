@@ -54,16 +54,8 @@ export default function HeroSection() {
 
               <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 {/* Call Button - Now Interactive */}
-                <button 
-                  onClick={handleCallClick}
-                  className={`px-3 py-2.5 rounded-[1px] border-2 text-center text-sm font-bold transition-colors ${
-                    isConnected
-                      ? "border-[#ff4444] bg-[#ff4444]/20 text-[#ff6666] hover:bg-[#ff4444]/30"
-                      : "border-[#ffffff] text-[#ffffff] hover:bg-[#0A74DA]/10"
-                  }`}
-                >
-                  {isConnected ? "Disconnect Call" : "Call - +19712 EMERGE"}
-                </button>
+                <a className="px-6 py-2.5 rounded-[1px] border-2 border-[#ffffff] text-[#ffffff] text-sm font-bold hover:bg-[#0A74DA]/5 transition-colors" href="tel:+19712566145">Call - +19712 EMERGE</a>
+            
                 
                 {/* Status Indicator */}
                 {isConnected && (
@@ -73,7 +65,7 @@ export default function HeroSection() {
                 )}
                 
                 {/* Primary CTA */}
-                <a className="px-3 py-2.5 rounded-[1px] bg-[#0A74DA] text-center text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#0757a4]" href="#">Message via WhatsApp</a>
+                <a className="px-3 py-2.5 rounded-[1px] bg-[#0A74DA] text-center text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#bdd5ec]" href="#">Message via WhatsApp</a>
               </div>
             </motion.div>
           </div>
